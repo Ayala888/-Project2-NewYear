@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Pacifico&family=Sofia&display=swap');
+
+:root {
+  --color: #f93030cc;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: black;
+  background: #f9f9f9;
+  overflow-x: hidden;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 8px 10px 10px rgba(0, 0, 0, .3);
+}
+
+.header .logo {
+  height: 65px;
+}
+
+.header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.header a {
+  text-decoration: none;
+  color: #e41b22;
+}
+
+.images img {
+  height: 70px;
+}
+
+
+/* Main Section */
+.main-section {
+  position: relative;
+
+}
+
+.main-section video {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+  padding-top: 60px;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay h1 {
+  font-size: 6rem;
+  margin-bottom: 20px;
+  font-family: "Mountains of Christmas", serif;
+  color: yellow;
+}
+
+.counted {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.time {
+  background-color: #e63939;
+  padding: 18px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+
+/* Search Section */
+.search-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-input {
+  width: 70%;
+  padding: 10px 15px;
+  border: 2px solid #feb47b;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.search-button {
+  padding: 10px 20px;
+  background-color: #ff7e5f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #e63939;
+}
+
+/* Achievements */
+.achievements-section {
+  text-align: center;
+  padding: 50px;
+}
+
+.title {
+  margin-top: 60px;
+  margin-bottom: 70px;
+  color: white;
+  font-size: 35px;
+  background-color: var(--color);
+  border-radius: 10px;
+  
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 20%;
+  margin: 10px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(253, 160, 133, 0.5), 0 0 10px #fda085; 
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-size: cover;
+  position: relative;
+}
+
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card .text {
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.9); 
+  border-top: 2px solid #fda085; 
+  font-weight: bold;
+  color: #f57c00; 
+}
+
+
+/* Wish Section */
+
+.container {
+  margin: 80px 300px;
+  display: flex;
+  gap: 50px;
+  border-radius: 5px;
+}
+
+.video-section video {
+  width: 300px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.7);
+}
+
+.wish-section {
+  margin: 30px 40px;
+}
+
+h1 {
+  color: var(--color);;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.wish-section h2 {
+  color: #5a8f7b;
+  text-shadow: 1px 1px 2px #ccc;
+}
+
+.wish-section p  {
+  font-size: 15px;
+  margin: 10px 0;
+  text-indent: 20px;
+  line-height: 1.6;
+}
+
+
+.wish-section h3 {
+  font-size: 23px;
+  color: #f57c00;
+  margin-bottom: 25px;
+}
+
+
+
+/* Gallery Section */
+.gallery-section {
+  padding: 50px;
+  text-align: center;
+  position: relative;
+}
+
+.ramka{
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-section .section-title {
+  font-size: 35px;
+  color: white;
+  margin-bottom: 70px;
+  font-family: "Mountains of Christmas", serif;
+  background-color: var(--color);;
+  border-radius: 10px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  text-align: center;
+  max-width: 250px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.caption {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #555;
+  font-family: Arial, sans-serif;
+}
+
+
+
+/* Footer */
+footer {
+  background-color: #e41b22; 
+  color: white;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.footer-logo img {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.footer-icons a {
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.footer-icons img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-column h3, .footer-contact h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 5px;
+}
+
+.footer-column ul li a, .footer-contact a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-column img {
+  width: 140px;
+}
+
+.footer-column ul li a:hover, .footer-contact a:hover {
+  text-decoration: underline;
+}
+
+.footer-contact p {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  border-top: 1px solid #fff;
+  padding-top: 10px;
+}
+
+
+.burger-menu{
+  display: none;
+}
+
+.burger-img{
+  width: 30px;
+}
+
+
+@media (max-width: 480px) {
+  /* Header */
+  .header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header .logo {
+    height: 40px;
+  }
+
+  .images{
+    display: none;
+  }
+
+  .nav-box{
+    display: none;
+  }
+
+  .burger-menu{
+    display: block;
+    position: relative;
+  }
+
+  .burger-box{
+    position: absolute;
+    padding: 10px;
+    border: 2px solid black;
+    top: 65px;
+    right: 5px;
+    background-color: white;
+    display: none; 
+    flex-direction: column;
+  }
+
+  .burger-box ul{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .burger-menu:hover .burger-box{
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Main Section */
+  .main-section video {
+    height: 50vh;
+  }
+
+  .overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+  }
+
+  .counted {
+    display: flex;
+  }
+
+  .time {
+    margin-bottom: 10px;
+    width: 50px; 
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  /* Search Section */
+  .search-container {
+    width: 100%;
+  }
+
+  .search-input {
+    width: 80%;
+  }
+
+  .search-button {
+    width: 20%;
+  }
+
+  /* Achievements Section */
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+    margin: 15px 0;
+  }
+
+  .card img {
+    height: 120px;
+  }
+
+  /* Wish Section */
+  .container {
+    margin: 30px 15px 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-section video {
+    width: 100%;
+    height: 300px;
+  }
+
+  .wish-section h1 {
+    font-size: 2em;
+  }
+
+  .wish-section h2 {
+    font-size: 1.5em;
+  }
+
+  /* Gallery Section */
+  .gallery-section {
+    padding: 30px 20px;
+  }
+
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery-item {
+    width: 70%;
+    margin-bottom: 20px;
+  }
+
+  .gallery-item img {
+    height: 200px;
+  }
+
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-contact {
+    text-align: center;
+  }
+}
